@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./LogoStory.css";
+import "./logostory.css";
 
 // All 24 crest elements, data-driven so the JSX below stays clean.
 // group: crown | shield | text | academic | flame | background
@@ -247,11 +247,7 @@ function ElementCard({ el }) {
 }
 
 export default function LogoStory() {
-  const [year, setYear] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    setYear(new Date().getFullYear());
-  }, []);
+  const year = new Date().getFullYear();
 
   return (
     <div className="eml-logo-story">
